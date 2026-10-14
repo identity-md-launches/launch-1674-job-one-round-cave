@@ -1,0 +1,1544 @@
+{
+  "demonstration_passed": true,
+  "results": [
+    {
+      "token": "ZTO",
+      "target": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+      "code_block": {
+        "number": "0x18f9518",
+        "hash": "0xb6e55dcdf6ded6229f188d80f0b986222b198d104e09e9194bb8d97539355a06"
+      },
+      "anchor": "unanchored-rpc-header",
+      "runtimes": [
+        {
+          "address": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+          "code_hash": "0x24e03ed7d7d3d6dc010b9a9836e419a3eb4215383b463f4e6685b4816435f16d",
+          "roles": [
+            "candidate-path"
+          ],
+          "runtime_bytes": 1287,
+          "recognized_solidity_metadata": {
+            "start": 1275,
+            "bytes": 12,
+            "solc_version": "0.8.26"
+          },
+          "literal_occurrence_counts": {
+            "zero": 0,
+            "address-mask": 0,
+            "small-integer": 0,
+            "address-shaped": 0
+          },
+          "unique_literal_count": 0,
+          "literal_preview": [],
+          "omitted_unique_literal_count": 0,
+          "truncated_relevant_push_count": 0
+        }
+      ],
+      "dependencies_verified": false
+    },
+    {
+      "token": "IMD",
+      "target": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+      "code_block": {
+        "number": "0x18f9518",
+        "hash": "0xb6e55dcdf6ded6229f188d80f0b986222b198d104e09e9194bb8d97539355a06"
+      },
+      "anchor": "unanchored-rpc-header",
+      "runtimes": [
+        {
+          "address": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+          "code_hash": "0x79a1ae149d27d4aae006d4dd75cb834222c9623799bbf34359428aaf66fec3bf",
+          "roles": [
+            "candidate-path"
+          ],
+          "runtime_bytes": 22990,
+          "recognized_solidity_metadata": {
+            "start": 22937,
+            "bytes": 53,
+            "solc_version": "0.8.26"
+          },
+          "literal_occurrence_counts": {
+            "zero": 0,
+            "address-mask": 82,
+            "small-integer": 5,
+            "address-shaped": 8
+          },
+          "unique_literal_count": 3,
+          "literal_preview": [
+            {
+              "literal": "0xffffffffffffffffffffffffffffffffffffffff",
+              "category": "address-mask",
+              "equals_runtime_address": false,
+              "occurrence_count": 82,
+              "occurrence_preview": [
+                {
+                  "pc": 2902,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 2923,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 2924,
+                      "opcode": "0x63",
+                      "operand": "0xfc0c546a",
+                      "complete": true
+                    },
+                    {
+                      "pc": 2929,
+                      "opcode": "0x60",
+                      "operand": "0x40",
+                      "complete": true
+                    },
+                    {
+                      "pc": 2931,
+                      "opcode": "0x51",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 3010,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 3031,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 3032,
+                      "opcode": "0x63",
+                      "operand": "0x18160ddd",
+                      "complete": true
+                    },
+                    {
+                      "pc": 3037,
+                      "opcode": "0x60",
+                      "operand": "0x40",
+                      "complete": true
+                    },
+                    {
+                      "pc": 3039,
+                      "opcode": "0x51",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 3317,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 3338,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 3339,
+                      "opcode": "0x81",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 3340,
+                      "opcode": "0x56",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 3341,
+                      "opcode": "0x5b",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 3343,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 3364,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 3365,
+                      "opcode": "0x7f",
+                      "operand": "0x0000000000000000000000001a44076050125825900e736c501f859c50fe728c",
+                      "complete": true
+                    },
+                    {
+                      "pc": 3398,
+                      "opcode": "0x73",
+                      "operand": "0xffffffffffffffffffffffffffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 3419,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 3398,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 3419,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 3420,
+                      "opcode": "0x14",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 3421,
+                      "opcode": "0x61",
+                      "operand": "0x0d9d",
+                      "complete": true
+                    },
+                    {
+                      "pc": 3424,
+                      "opcode": "0x57",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 4449,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 4470,
+                      "opcode": "0x2",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4471,
+                      "opcode": "0x19",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4472,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4473,
+                      "opcode": "0x90",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 4475,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 4496,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4497,
+                      "opcode": "0x2",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4498,
+                      "opcode": "0x17",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4499,
+                      "opcode": "0x90",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 4565,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 4586,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4587,
+                      "opcode": "0x73",
+                      "operand": "0xffffffffffffffffffffffffffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4608,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4609,
+                      "opcode": "0x81",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 4587,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 4608,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4609,
+                      "opcode": "0x81",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4610,
+                      "opcode": "0x52",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4611,
+                      "opcode": "0x60",
+                      "operand": "0x20",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 4658,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 4679,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4680,
+                      "opcode": "0x82",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4681,
+                      "opcode": "0x73",
+                      "operand": "0xffffffffffffffffffffffffffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4702,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 4681,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 4702,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4703,
+                      "opcode": "0x14",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4704,
+                      "opcode": "0x90",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4705,
+                      "opcode": "0x50",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 5026,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 5047,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 5048,
+                      "opcode": "0x90",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 5049,
+                      "opcode": "0x50",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 5050,
+                      "opcode": "0x90",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 5283,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 5304,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 5305,
+                      "opcode": "0x81",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 5306,
+                      "opcode": "0x56",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 5307,
+                      "opcode": "0x5b",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 5975,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 5996,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 5997,
+                      "opcode": "0x63",
+                      "operand": "0xd045a0dc",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6002,
+                      "opcode": "0x82",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6003,
+                      "opcode": "0x60",
+                      "operand": "0xc0",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 6165,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 6186,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6187,
+                      "opcode": "0x63",
+                      "operand": "0x8e9e7099",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6192,
+                      "opcode": "0x60",
+                      "operand": "0x40",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6194,
+                      "opcode": "0x51",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 6416,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 6437,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6438,
+                      "opcode": "0x63",
+                      "operand": "0xca5eb5e1",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6443,
+                      "opcode": "0x82",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6444,
+                      "opcode": "0x60",
+                      "operand": "0x40",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 6521,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 6542,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6543,
+                      "opcode": "0x33",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6544,
+                      "opcode": "0x73",
+                      "operand": "0xffffffffffffffffffffffffffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6565,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 6544,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 6565,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6566,
+                      "opcode": "0x14",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6567,
+                      "opcode": "0x61",
+                      "operand": "0x19dc",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6570,
+                      "opcode": "0x57",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 6664,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 6685,
+                      "opcode": "0x2",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6686,
+                      "opcode": "0x19",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6687,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6688,
+                      "opcode": "0x90",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 6690,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 6711,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6712,
+                      "opcode": "0x2",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6713,
+                      "opcode": "0x17",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6714,
+                      "opcode": "0x90",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 6780,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 6801,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6802,
+                      "opcode": "0x73",
+                      "operand": "0xffffffffffffffffffffffffffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6823,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6824,
+                      "opcode": "0x81",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 6802,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 6823,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6824,
+                      "opcode": "0x81",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6825,
+                      "opcode": "0x52",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6826,
+                      "opcode": "0x60",
+                      "operand": "0x20",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 6839,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 6860,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6861,
+                      "opcode": "0x73",
+                      "operand": "0xffffffffffffffffffffffffffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6882,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6883,
+                      "opcode": "0x81",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 6861,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 6882,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6883,
+                      "opcode": "0x81",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6884,
+                      "opcode": "0x52",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6885,
+                      "opcode": "0x60",
+                      "operand": "0x20",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 7488,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 7509,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 7510,
+                      "opcode": "0x81",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 7511,
+                      "opcode": "0x73",
+                      "operand": "0xffffffffffffffffffffffffffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 7532,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 7511,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 7532,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 7533,
+                      "opcode": "0x3",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 7534,
+                      "opcode": "0x61",
+                      "operand": "0x1dae",
+                      "complete": true
+                    },
+                    {
+                      "pc": 7537,
+                      "opcode": "0x57",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 8088,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 8109,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8110,
+                      "opcode": "0x63",
+                      "operand": "0x7cb59012",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8115,
+                      "opcode": "0x84",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8116,
+                      "opcode": "0x8b",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 8198,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 8219,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8220,
+                      "opcode": "0x88",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8221,
+                      "opcode": "0x7f",
+                      "operand": "0xefed6d3500546b29533b128a29e3a94d70788727f0507505ac12eaf2e578fd9c",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8254,
+                      "opcode": "0x8b",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 8454,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 8475,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8476,
+                      "opcode": "0x83",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8477,
+                      "opcode": "0x73",
+                      "operand": "0xffffffffffffffffffffffffffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8498,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 8477,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 8498,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8499,
+                      "opcode": "0x3",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8500,
+                      "opcode": "0x61",
+                      "operand": "0x2174",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8503,
+                      "opcode": "0x57",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 8566,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 8587,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8588,
+                      "opcode": "0x82",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8589,
+                      "opcode": "0x73",
+                      "operand": "0xffffffffffffffffffffffffffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8610,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 8589,
+                  "push_bytes": 20,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 8610,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8611,
+                      "opcode": "0x3",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8612,
+                      "opcode": "0x61",
+                      "operand": "0x21e4",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8615,
+                      "opcode": "0x57",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                }
+              ],
+              "omitted_occurrence_count": 50
+            },
+            {
+              "literal": "0x1a44076050125825900e736c501f859c50fe728c",
+              "category": "address-shaped",
+              "equals_runtime_address": false,
+              "occurrence_count": 8,
+              "occurrence_preview": [
+                {
+                  "pc": 3365,
+                  "push_bytes": 32,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 3398,
+                      "opcode": "0x73",
+                      "operand": "0xffffffffffffffffffffffffffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 3419,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 3420,
+                      "opcode": "0x14",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 3421,
+                      "opcode": "0x61",
+                      "operand": "0x0d9d",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 4394,
+                  "push_bytes": 32,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 4427,
+                      "opcode": "0x81",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4428,
+                      "opcode": "0x56",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4429,
+                      "opcode": "0x5b",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 4430,
+                      "opcode": "0x61",
+                      "operand": "0x1155",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 6383,
+                  "push_bytes": 32,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 6416,
+                      "opcode": "0x73",
+                      "operand": "0xffffffffffffffffffffffffffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6437,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6438,
+                      "opcode": "0x63",
+                      "operand": "0xca5eb5e1",
+                      "complete": true
+                    },
+                    {
+                      "pc": 6443,
+                      "opcode": "0x82",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 8055,
+                  "push_bytes": 32,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 8088,
+                      "opcode": "0x73",
+                      "operand": "0xffffffffffffffffffffffffffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8109,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8110,
+                      "opcode": "0x63",
+                      "operand": "0x7cb59012",
+                      "complete": true
+                    },
+                    {
+                      "pc": 8115,
+                      "opcode": "0x84",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 9332,
+                  "push_bytes": 32,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 9365,
+                      "opcode": "0x73",
+                      "operand": "0xffffffffffffffffffffffffffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 9386,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 9387,
+                      "opcode": "0x63",
+                      "operand": "0xddc28c58",
+                      "complete": true
+                    },
+                    {
+                      "pc": 9392,
+                      "opcode": "0x60",
+                      "operand": "0x40",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 12151,
+                  "push_bytes": 32,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 12184,
+                      "opcode": "0x73",
+                      "operand": "0xffffffffffffffffffffffffffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 12205,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 12206,
+                      "opcode": "0x63",
+                      "operand": "0x2637a450",
+                      "complete": true
+                    },
+                    {
+                      "pc": 12211,
+                      "opcode": "0x82",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 12745,
+                  "push_bytes": 32,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 12778,
+                      "opcode": "0x73",
+                      "operand": "0xffffffffffffffffffffffffffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 12799,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 12800,
+                      "opcode": "0x63",
+                      "operand": "0xe4fe1d94",
+                      "complete": true
+                    },
+                    {
+                      "pc": 12805,
+                      "opcode": "0x60",
+                      "operand": "0x40",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 12993,
+                  "push_bytes": 32,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 13026,
+                      "opcode": "0x84",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 13027,
+                      "opcode": "0x84",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 13028,
+                      "opcode": "0x73",
+                      "operand": "0xffffffffffffffffffffffffffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 13049,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                }
+              ],
+              "omitted_occurrence_count": 0
+            },
+            {
+              "literal": "0x000000000000000000000000000000e8d4a51000",
+              "category": "small-integer",
+              "equals_runtime_address": false,
+              "occurrence_count": 5,
+              "occurrence_preview": [
+                {
+                  "pc": 5197,
+                  "push_bytes": 32,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 5230,
+                      "opcode": "0x81",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 5231,
+                      "opcode": "0x56",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 5232,
+                      "opcode": "0x5b",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 5233,
+                      "opcode": "0x5f",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 10857,
+                  "push_bytes": 32,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 10890,
+                      "opcode": "0x7f",
+                      "operand": "0x000000000000000000000000000000000000000000000000000000e8d4a51000",
+                      "complete": true
+                    },
+                    {
+                      "pc": 10923,
+                      "opcode": "0x83",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 10924,
+                      "opcode": "0x61",
+                      "operand": "0x2ab5",
+                      "complete": true
+                    },
+                    {
+                      "pc": 10927,
+                      "opcode": "0x91",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 10890,
+                  "push_bytes": 32,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 10923,
+                      "opcode": "0x83",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 10924,
+                      "opcode": "0x61",
+                      "operand": "0x2ab5",
+                      "complete": true
+                    },
+                    {
+                      "pc": 10927,
+                      "opcode": "0x91",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 10928,
+                      "opcode": "0x90",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 11054,
+                  "push_bytes": 32,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 11087,
+                      "opcode": "0x82",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 11088,
+                      "opcode": "0x67",
+                      "operand": "0xffffffffffffffff",
+                      "complete": true
+                    },
+                    {
+                      "pc": 11097,
+                      "opcode": "0x16",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 11098,
+                      "opcode": "0x61",
+                      "operand": "0x2b63",
+                      "complete": true
+                    }
+                  ]
+                },
+                {
+                  "pc": 11901,
+                  "push_bytes": 32,
+                  "overlaps_recognized_metadata": false,
+                  "followed_by_address_eq": false,
+                  "following_instructions": [
+                    {
+                      "pc": 11934,
+                      "opcode": "0x82",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 11935,
+                      "opcode": "0x61",
+                      "operand": "0x2ea8",
+                      "complete": true
+                    },
+                    {
+                      "pc": 11938,
+                      "opcode": "0x91",
+                      "operand": "0x",
+                      "complete": true
+                    },
+                    {
+                      "pc": 11939,
+                      "opcode": "0x90",
+                      "operand": "0x",
+                      "complete": true
+                    }
+                  ]
+                }
+              ],
+              "omitted_occurrence_count": 0
+            }
+          ],
+          "omitted_unique_literal_count": 0,
+          "truncated_relevant_push_count": 0
+        }
+      ],
+      "dependencies_verified": false
+    }
+  ],
+  "scope": "Real historical code proof replay; literal syntax only."
+}

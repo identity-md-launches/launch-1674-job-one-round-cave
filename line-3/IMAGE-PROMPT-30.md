@@ -1,0 +1,7 @@
+# Round 30 image prompt
+
+Built-in imagegen edit with the downloaded record-29 wall as its sole reference.
+
+Use case: precise-object-edit. Edit target: the attached latest Line 3 cave wall. Keep the entire square 1254 by 1254 image, all existing paintings in their exact positions, rock cracks, texture, color, torchlight and framing. Add ONLY in the currently bare lower-left-central rock area at x=190..480,y=1035..1175: a small hand-drawn head-only Pepe the frog, wide mouth and heavy-lidded eyes, facing a tiny ochre pebble enclosed in a charcoal ring, representing an address embedded inside a code stone. This addition should be about 230 by 115 pixels, fit entirely in that clear rock area below all existing marks. No hands, limbs or handprints added. Primitive irregular charcoal, red/yellow ochre and chalk-white pigments, worn and with bare stone showing through. Preserve every ancestor mark; do not redraw, move, erase or clean anything. No letters, numbers, captions, signatures, logos, watermarks, borders, frames, real people, political or hateful symbols. Save the edited PNG directly to artifacts/line-3/wall-v10.png if possible; do not create any other workspace image.
+
+The generated addition landed slightly to the right of the requested area. The selected head and ringed pebble occupy clear lower rock and do not overlap any ancestral pigment. The assembly helper retained those two areas in place and restored every other pixel from the inherited wall. The final PNG and numbered JPEG were then inspected.

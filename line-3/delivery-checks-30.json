@@ -1,0 +1,29 @@
+{
+  "checks_passed": true,
+  "round": 30,
+  "goal_byte_identical": true,
+  "older_records_byte_identical": 29,
+  "new_record_shape_and_hash_valid": true,
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_format": "PNG",
+  "wall_sha256": "3b1c683e0032f7da1231ceda663d1f549cb13f7fbddcf080e4fdcd894f135980",
+  "current_alias_identical": true,
+  "named_outputs_untracked": true,
+  "thumbnail_dimensions": [
+    512,
+    512
+  ],
+  "thumbnail_format": "JPEG",
+  "thumbnail_bytes": 59539,
+  "all_new_source_files_under_100KB": true,
+  "changes_confined_to_authorized_paths": true,
+  "test_suites": {
+    "code_constants": 16,
+    "code_surface": 25,
+    "code_proof": 30
+  },
+  "unmet_visual_requirements": []
+}

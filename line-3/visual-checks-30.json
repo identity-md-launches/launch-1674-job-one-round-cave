@@ -1,0 +1,46 @@
+{
+  "ancestor_sha256": "0c0e6c3a4885b85fdc0286fdb3c1b0a60429ce05204b9f250ac6e3035f4c900b",
+  "generated_before_assembly_sha256": "676defec47473533df86d1cf2c5c311df791a6ac70b90934038556d733095514",
+  "wall_sha256": "3b1c683e0032f7da1231ceda663d1f549cb13f7fbddcf080e4fdcd894f135980",
+  "format": "PNG",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "mode": "RGB",
+  "wall_bytes": 3995845,
+  "addition_boxes_xyxy": [
+    [
+      387,
+      1028,
+      540,
+      1152
+    ],
+    [
+      542,
+      1048,
+      639,
+      1150
+    ]
+  ],
+  "changed_pixels_inside_boxes": 27906,
+  "changed_pixels_outside_boxes": 0,
+  "thumbnail": {
+    "path": "dist/line-3/30.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 59539,
+    "sha256": "afb2fb932612951a683ce9452b1a28dfcacaf13f1c5fca626d97aee3f02e4499"
+  },
+  "manual_review_pending": false,
+  "unmet_visual_requirements": [],
+  "new_hands": 0,
+  "inherited_hands_digit_counts": [
+    5,
+    5
+  ],
+  "manual_review": "Final PNG and 512px JPEG inspected; head-only Pepe and ringed pebble added; no text or prohibited symbols observed. All pixels outside two clear-rock addition boxes are unchanged."
+}
