@@ -53,6 +53,11 @@
       "copy": "shared/surface-return/call-changes/rehearse_core.py",
       "sha256": "ddb70529bce2d13f0ca79be281446149d150432004f552ef989fbe23385314f9",
       "changes": "none"
+    },
+    {
+      "source": "line-4/tools/calldata-lens/calldata_lens.py",
+      "copy": "shared/surface-return/calldata-lens/calldata_lens.py",
+      "sha256": "7a52277e14e4bb96922b88eac87c4dc6b7f1e26ffb00ada5ff18af5b1f0934a7"
     }
   ],
   "runtime": "Python standard library; all dependencies included as ordinary files",

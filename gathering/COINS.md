@@ -1,3 +1,3 @@
 none
 
-The four lines and their shared tools can exist as standard-library readers and planners using the real Ethereum ZTO/IMD assets. This gathering's new same-block supply check uses ZTO directly. Neither a new coin nor a Uniswap v4 hook is needed to make any line possible. No launch request or contract deployment order is warranted; there is no contract to deploy in this round.
+The four lines work as standard-library readers, validators and unsigned planning tools with the existing real Ethereum ZTO and IMD assets. This round's shared tool uses ZTO directly to inspect a historical PoolManager balance call. No functionality requires a new coin, and a Uniswap v4 hook would not supply missing code identity or RPC truth. No launch or deployment request is warranted; no contract was added for deployment.

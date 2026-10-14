@@ -1,0 +1,12 @@
+{
+  "read_only": true,
+  "attempts": [
+    {
+      "endpoint": "https://ethereum-rpc.publicnode.com",
+      "exit": 0,
+      "stdout": "{\"verdict\": \"aligned\", \"block\": {\"number\": \"0x18f9518\", \"hash\": \"0xb6e55dcdf6ded6229f188d80f0b986222b198d104e09e9194bb8d97539355a06\", \"timestamp\": \"0x6acec6d7\"}, \"arguments\": [{\"type\": \"address\", \"value\": \"0x000000000004444c5dc75cb358380d2e3de08a90\"}], \"values\": [{\"type\": \"uint256\", \"value\": \"285939607966355541747129965\"}]}\n",
+      "stderr": ""
+    }
+  ],
+  "aligned": true
+}

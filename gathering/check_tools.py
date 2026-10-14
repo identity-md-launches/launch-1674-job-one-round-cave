@@ -15,6 +15,11 @@ def checks():
                 commands.append((f'line-{number}-{folder.name}-suite',
                     ['-m', 'unittest', 'discover', '-s', str(folder), '-p', 'test_*.py', '-v'], 0))
     commands.extend([
+        ('surface-call-demo', ['shared/surface-return/surface_call.py', '--demo'], 0),
+        ('bundle-refresh-demo', ['line-2/tools/bundle-refresh/bundle_refresh.py'], 0),
+        ('code-constants-demo', ['line-3/tools/code-constants/demo.py'], 0),
+        ('calldata-lens-demo', ['line-4/tools/calldata-lens/calldata_lens.py', 'demo'], 0),
+        ('zto-handoff-evidence', ['line-1/tools/zto-handoff/zto_handoff.py', '--demo', '--verify-evidence', 'line-1/tools/zto-handoff/demo-handoff.json'], 0),
         ('surface-return-demo', ['shared/surface-return/surface_return.py', '--demo'], 0),
         ('surface-return-block-mismatch', ['shared/surface-return/surface_return.py', '--bundle', 'shared/surface-return/zto-proof.json', '--observation', 'shared/surface-return/zto-other-block-call.json', '--signature', 'totalSupply()', '--types', 'uint256'], 2),
         ('return-lens-demo', ['line-4/tools/return-lens/return_lens.py', 'demo'], 0),

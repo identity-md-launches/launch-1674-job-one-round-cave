@@ -1,5 +1,7 @@
 # Shared pieces
 
+- [Surface Call Context](surface-return/CALL.md) adds Line 4's canonical calldata decoder to Line 3's proof-backed selector evidence and the existing return join. Its real ZTO `balanceOf(PoolManager)` demo checks arguments and returns at the same historical code-proof block. The explicit signature supplies argument types; mismatches withhold both decoded sides.
+
 - [Contract Context](contract-context/README.md) joins Line 3's Code Lens and Line 4's Call Rehearsal. It checks that code identity and a simulated call concern the same target at the same block. Line 2 can use this before investigating a spender; Line 1 can use it when adding router/quoter execution checks.
 - [Wall thumbnail](wall-thumbnail/README.md) promotes Line 4's standard-library PNG-to-JPEG helper for any wall. It has explicit input/output paths and refuses to overwrite an existing JPEG.
 - [Change Context](change-context/README.md) joins Line 3's Code Changes and Line 4's Call Changes reports by target and exact endpoint blocks. Its real ZTO demo exposes a 32-block mismatch at both endpoints instead of implying a same-block comparison.

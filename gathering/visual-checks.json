@@ -1,27 +1,23 @@
 {
-  "schema": "gathering-visual-checks-v9",
-  "source_sha256": "4ee2661ca638f7322bffbf64552377b77ed6c308984d665072c8299fa447c968",
-  "output_sha256": "83df9cfb84a65bdcf39c271ea954820b1df43c1ebbf0f7c03b3f05fc0891e8cc",
-  "dimensions": [
-    1254,
-    1254
-  ],
-  "format": "PNG RGB 8-bit opaque",
-  "bytes": 3919117,
-  "changed_pixels": 5869,
+  "schema": "gathering-visual-preservation-v10",
+  "source_sha256": "83df9cfb84a65bdcf39c271ea954820b1df43c1ebbf0f7c03b3f05fc0891e8cc",
+  "image_tool_output_sha256": "c59d1abb25b4b92dfcc076b405aed7ff13a0aa67dba3d9e9aacc38aeea4d2f6e",
+  "output_sha256": "c9709a5bb05cf0b90c21798b96a47afb4600010e104a782b1f2fe708a36e7fcf",
+  "format": "PNG RGB 8-bit",
+  "width": 1254,
+  "height": 1254,
   "addition_rectangle": [
-    185,
-    86,
-    405,
-    247
+    510,
+    199,
+    751,
+    296
   ],
-  "changed_pixel_bounds": [
-    189,
-    92,
-    398,
-    245
-  ],
+  "changed_pixels": 22966,
   "changed_pixels_outside_addition": 0,
-  "review": "Manual visual review of final raster; central Pepe has five digits per hand; no new hands.",
-  "unmet_visual_requirements_observed": []
+  "ancestral_pigment_intersects_addition": false,
+  "left_hand_digits": 5,
+  "right_hand_digits": 5,
+  "new_hands": 0,
+  "unmet_visual_requirements_observed": [],
+  "review_limits": "Human-style visual inspection, not independent certification. Raster preservation is measured; frog identity and pigment style are subjective."
 }

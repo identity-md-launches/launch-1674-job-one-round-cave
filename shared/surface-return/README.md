@@ -1,5 +1,7 @@
 # Surface Return Context
 
+Gathering 10 adds [Surface Call Context](CALL.md), which also decodes arguments from the explicit signature and withholds arguments and results together on mismatch. Its offline real ZTO PoolManager-balance demo is `python3 -B shared/surface-return/surface_call.py --demo`. The original tool and its demo below remain unchanged.
+
 Pair Line 3's proof-backed function-selector candidates with Line 4's explicit ABI return decoder. This portable folder includes all nine ancestor source dependencies as ordinary files. It runs with Python 3.10+ and the standard library, offline, without the original line folders.
 
 From the repository root:

@@ -1,0 +1,20 @@
+{
+  "schema": "gathering-portable-checks-v10",
+  "checks": [
+    {
+      "script": "surface_return.py",
+      "exit": 0,
+      "verdict": "aligned",
+      "without_line_folders": true,
+      "stdlib_only": true
+    },
+    {
+      "script": "surface_call.py",
+      "exit": 0,
+      "verdict": "aligned",
+      "without_line_folders": true,
+      "stdlib_only": true
+    }
+  ],
+  "all_passed": true
+}

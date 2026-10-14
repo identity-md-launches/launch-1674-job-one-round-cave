@@ -1,10 +1,30 @@
 {
-  "name": "Not painted yet",
-  "image": "https://api.imd.fun/artifacts/250525790c1987cbb52114bd4e77926f023ac1dc10b73ffc2e1f56e32dfb8a36",
+  "name": "The Bowl of Questions",
+  "image": "https://api.imd.fun/artifacts/c9709a5bb05cf0b90c21798b96a47afb4600010e104a782b1f2fe708a36e7fcf",
   "attributes": [
     {
       "trait_type": "Cave",
       "value": "Moss"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Gathering"
+    },
+    {
+      "trait_type": "Number",
+      "value": 10
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Surface Call Context"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Ochre stones enter a charcoal bowl and leave as chalk."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Gathering"
     }
   ]
 }
