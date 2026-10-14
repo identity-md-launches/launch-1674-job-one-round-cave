@@ -1,0 +1,311 @@
+{
+  "schema": "permission-bundle-refresh-report-v1",
+  "status": "release_bundle_for_owner_review",
+  "accepted": true,
+  "withholding_reasons": [],
+  "chain_id": 1,
+  "token_address": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+  "previous_block_number": 26184897,
+  "current_block_number": 26187572,
+  "current_block_hash": "0xfbdf6fb511bd7ee2e74dd1b2bd8982e05e2d4cf8d10e495e6b9789bc50e7997f",
+  "reference_block_number": 26187572,
+  "reference_block_hash": "0xfbdf6fb511bd7ee2e74dd1b2bd8982e05e2d4cf8d10e495e6b9789bc50e7997f",
+  "age_blocks": 0,
+  "maximum_age_blocks": 8,
+  "reviewed_candidate_count": 3,
+  "current_pair_count": 19,
+  "coverage_exact": true,
+  "bundle_review": {
+    "schema": "permission-draft-bundle-report-v1",
+    "status": "complete_reviewed_bundle",
+    "matches_reviewed_bundle": true,
+    "permission_gate_decision": "deny",
+    "chain_id": 1,
+    "token_address": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+    "block_number": 26184897,
+    "block_hash": "0xbcad3af0fad3def330e01bef9d4352ae1fd1b1b1c17dad252205aecf2c807563",
+    "anchors_match": true,
+    "expected_count": 3,
+    "received_count": 3,
+    "missing_count": 0,
+    "unexpected_count": 0,
+    "duplicate_count": 0,
+    "missing_pairs": [],
+    "complete_wallet_audit": false,
+    "limitations": [
+      "Completeness means only the optional candidates derived from supplied evidence and policy.",
+      "A matching empty bundle means no reviewed candidates, never a complete wallet audit.",
+      "Historical RPC evidence is trusted; unknown spenders, Permit2 and signatures are omitted.",
+      "No age, canonicality or future-state guarantee; refresh evidence before owner review.",
+      "No owner authorization, signature, simulation, transaction submission or execution is provided."
+    ]
+  },
+  "pair_reviews": [
+    {
+      "owner": "0x051fae10d5237bf7262d8477e2771c14545b5b97",
+      "spender": "0xccc88a9d1b4ed6b0eaba998850414b24f1c315be",
+      "status": "still_within_reviewed_limit",
+      "reviewed_candidate": false,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "0",
+      "current_allowance_raw": "0",
+      "current_balance_raw": "3195388076109321647380316"
+    },
+    {
+      "owner": "0x2c6b6955ea01546343c363d8efbb31fac3f8cfb2",
+      "spender": "0xccc88a9d1b4ed6b0eaba998850414b24f1c315be",
+      "status": "still_within_reviewed_limit",
+      "reviewed_candidate": false,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "0",
+      "current_allowance_raw": "0",
+      "current_balance_raw": "0"
+    },
+    {
+      "owner": "0x35f4b9acd41584df18e88cc7ebfbd2ea1e270f62",
+      "spender": "0x4313c378cc91ea583c91387b9216e2c03096b27f",
+      "status": "still_within_reviewed_limit",
+      "reviewed_candidate": false,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "0",
+      "current_allowance_raw": "0",
+      "current_balance_raw": "0"
+    },
+    {
+      "owner": "0x37b4df3817b864d6afa56a21bd92933f4721a1b6",
+      "spender": "0x0000000000001ff3684f28c67538d4d072c22734",
+      "status": "still_within_reviewed_limit",
+      "reviewed_candidate": false,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "0",
+      "current_allowance_raw": "0",
+      "current_balance_raw": "0"
+    },
+    {
+      "owner": "0x4662b891269e2196e67cca73e4b7812dd91c7ae3",
+      "spender": "0x0000000000001ff3684f28c67538d4d072c22734",
+      "status": "still_within_reviewed_limit",
+      "reviewed_candidate": false,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "0",
+      "current_allowance_raw": "0",
+      "current_balance_raw": "4156925955350016572884"
+    },
+    {
+      "owner": "0x632ee80c099662ee9880d04a307401de195dabf8",
+      "spender": "0x765956a7307222346b08fff681820a5d77e92028",
+      "status": "same_active_permission",
+      "reviewed_candidate": true,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "current_allowance_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "current_balance_raw": "0"
+    },
+    {
+      "owner": "0x77460867cc5e9b19cda24040e0d28e08b6916c76",
+      "spender": "0xccc88a9d1b4ed6b0eaba998850414b24f1c315be",
+      "status": "still_within_reviewed_limit",
+      "reviewed_candidate": false,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "0",
+      "current_allowance_raw": "0",
+      "current_balance_raw": "0"
+    },
+    {
+      "owner": "0x799feaf061773be889d8a029d7381e24f79ac08e",
+      "spender": "0x227be0f88ecb7899a0e6e0347888b909d622c8e1",
+      "status": "still_within_reviewed_limit",
+      "reviewed_candidate": false,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "0",
+      "current_allowance_raw": "0",
+      "current_balance_raw": "789511340361653663252300"
+    },
+    {
+      "owner": "0x824932206b216977e3a94094a9d6ecfc6851f0c8",
+      "spender": "0x02e5be68d46dac0b524905bff209cf47ee6db2a9",
+      "status": "still_within_reviewed_limit",
+      "reviewed_candidate": false,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "0",
+      "current_allowance_raw": "0",
+      "current_balance_raw": "100000683029575604657695"
+    },
+    {
+      "owner": "0xb78c3a71ecf26ade99056db53da01d78d3261e8f",
+      "spender": "0xccc88a9d1b4ed6b0eaba998850414b24f1c315be",
+      "status": "still_within_reviewed_limit",
+      "reviewed_candidate": false,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "0",
+      "current_allowance_raw": "0",
+      "current_balance_raw": "0"
+    },
+    {
+      "owner": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+      "spender": "0x0000000000001ff3684f28c67538d4d072c22734",
+      "status": "still_within_reviewed_limit",
+      "reviewed_candidate": false,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "0",
+      "current_allowance_raw": "0",
+      "current_balance_raw": "0"
+    },
+    {
+      "owner": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+      "spender": "0x0005ea683517b3a4463bfd798c9850ad2d586795",
+      "status": "still_within_reviewed_limit",
+      "reviewed_candidate": false,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "0",
+      "current_allowance_raw": "0",
+      "current_balance_raw": "0"
+    },
+    {
+      "owner": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+      "spender": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+      "status": "still_within_reviewed_limit",
+      "reviewed_candidate": false,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "0",
+      "current_allowance_raw": "0",
+      "current_balance_raw": "0"
+    },
+    {
+      "owner": "0xbadb536e95f450a4978445d7a0e363a42ec37eb4",
+      "spender": "0x765956a7307222346b08fff681820a5d77e92028",
+      "status": "same_active_permission",
+      "reviewed_candidate": true,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "current_allowance_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "current_balance_raw": "0"
+    },
+    {
+      "owner": "0xca1a6e5fe34293775fe0dd109d74539b567eec34",
+      "spender": "0x0000000000001ff3684f28c67538d4d072c22734",
+      "status": "still_within_reviewed_limit",
+      "reviewed_candidate": false,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "0",
+      "current_allowance_raw": "0",
+      "current_balance_raw": "30552541524306096706135"
+    },
+    {
+      "owner": "0xca1a6e5fe34293775fe0dd109d74539b567eec34",
+      "spender": "0x02e5be68d46dac0b524905bff209cf47ee6db2a9",
+      "status": "still_within_reviewed_limit",
+      "reviewed_candidate": false,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "0",
+      "current_allowance_raw": "0",
+      "current_balance_raw": "30552541524306096706135"
+    },
+    {
+      "owner": "0xcb3c89c1145055a88504e71f7c5ad733169be093",
+      "spender": "0x40aa958dd87fc8305b97f2ba922cddca374bcd7f",
+      "status": "still_within_reviewed_limit",
+      "reviewed_candidate": false,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "0",
+      "current_allowance_raw": "0",
+      "current_balance_raw": "0"
+    },
+    {
+      "owner": "0xd5d0448415e9cb4586aa0d801be1cecaa1b1e2f7",
+      "spender": "0xccc88a9d1b4ed6b0eaba998850414b24f1c315be",
+      "status": "still_within_reviewed_limit",
+      "reviewed_candidate": false,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "0",
+      "current_allowance_raw": "0",
+      "current_balance_raw": "0"
+    },
+    {
+      "owner": "0xdd0c9e144197502537cef07eb7b7cb787c9d05ec",
+      "spender": "0x40aa958dd87fc8305b97f2ba922cddca374bcd7f",
+      "status": "same_active_permission",
+      "reviewed_candidate": true,
+      "policy_limit_raw": "0",
+      "previous_allowance_raw": "999363625607574787149845274",
+      "current_allowance_raw": "999363625607574787149845274",
+      "current_balance_raw": "636374392425212850154727"
+    }
+  ],
+  "balance_changed_pairs": 0,
+  "input_sha256": {
+    "bundle": "d73abc7933bda1227453caa79d6004a5614044e678511e6848e05ab8d83fcd73",
+    "before": "fbd1234e99c681315786a728c0e703506a7b4721029ce44b191397987ca648bd",
+    "policy": "c83e9477ec60d0e328f79083e57b7c8efa9303d1e2cb79b1678d070d458316ff",
+    "after": "e1840875d1e730aa6c16453ffffcd8b386a634f2752c9cfd1311eb4103fb65b4",
+    "reference": "b580b4adfdf1aba4f7ca21a859a6f85e8f0c516472c3372e7ed8e1cf088c0161"
+  },
+  "owner_review_bundle": {
+    "chain_id": 1,
+    "token_address": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+    "block_number": 26184897,
+    "block_hash": "0xbcad3af0fad3def330e01bef9d4352ae1fd1b1b1c17dad252205aecf2c807563",
+    "schema": "permission-draft-bundle-v1",
+    "drafts": [
+      {
+        "owner": "0x632ee80c099662ee9880d04a307401de195dabf8",
+        "spender": "0x765956a7307222346b08fff681820a5d77e92028",
+        "allowance_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "balance_raw": "0",
+        "policy_limit_raw": "0",
+        "target_allowance_raw": "0",
+        "review_note": "Optional revoke candidate; the owner must choose and verify it.",
+        "transaction": {
+          "chainId": "0x1",
+          "from": "0x632ee80c099662ee9880d04a307401de195dabf8",
+          "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+          "value": "0x0",
+          "data": "0x095ea7b3000000000000000000000000765956a7307222346b08fff681820a5d77e920280000000000000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "owner": "0xbadb536e95f450a4978445d7a0e363a42ec37eb4",
+        "spender": "0x765956a7307222346b08fff681820a5d77e92028",
+        "allowance_raw": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+        "balance_raw": "0",
+        "policy_limit_raw": "0",
+        "target_allowance_raw": "0",
+        "review_note": "Optional revoke candidate; the owner must choose and verify it.",
+        "transaction": {
+          "chainId": "0x1",
+          "from": "0xbadb536e95f450a4978445d7a0e363a42ec37eb4",
+          "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+          "value": "0x0",
+          "data": "0x095ea7b3000000000000000000000000765956a7307222346b08fff681820a5d77e920280000000000000000000000000000000000000000000000000000000000000000"
+        }
+      },
+      {
+        "owner": "0xdd0c9e144197502537cef07eb7b7cb787c9d05ec",
+        "spender": "0x40aa958dd87fc8305b97f2ba922cddca374bcd7f",
+        "allowance_raw": "999363625607574787149845274",
+        "balance_raw": "636374392425212850154727",
+        "policy_limit_raw": "0",
+        "target_allowance_raw": "0",
+        "review_note": "Optional revoke candidate; the owner must choose and verify it.",
+        "transaction": {
+          "chainId": "0x1",
+          "from": "0xdd0c9e144197502537cef07eb7b7cb787c9d05ec",
+          "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+          "value": "0x0",
+          "data": "0x095ea7b300000000000000000000000040aa958dd87fc8305b97f2ba922cddca374bcd7f0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      }
+    ]
+  },
+  "complete_wallet_audit": false,
+  "limitations": [
+    "All-or-nothing release covers only the exact supplied measured inventory, never a whole wallet.",
+    "Original ceilings apply to rechecked pairs; the original policy block interval applies to initial review only.",
+    "Changed, cleared or newly violating permissions require a new review; no partial bundle is released.",
+    "Balance changes alone do not change permission. Candidate balances remain historical; current balances are reported separately.",
+    "Age is relative to the supplied reference, not wall-clock time or the current chain tip.",
+    "RPC evidence is trusted, not state proofs; later headers alone do not prove ancestry or canonicality.",
+    "Permit2, unknown spenders, unused signatures and custom authorizations remain outside coverage.",
+    "Release requires an independent owner decision; no authorization, simulation, signing or transaction sending occurs."
+  ]
+}

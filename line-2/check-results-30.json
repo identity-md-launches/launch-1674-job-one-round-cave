@@ -1,0 +1,46 @@
+{
+  "local_checks_only": true,
+  "new_tool_tests": {
+    "command": "python3 -B -m unittest discover -s line-2/tools/bundle-refresh -p test_*.py -v",
+    "passed": 15
+  },
+  "ancestor_bundle_tests": {
+    "command": "python3 -B -m unittest discover -s line-2/tools/draft-bundle -p test_*.py -v",
+    "passed": 11
+  },
+  "live_capture": {
+    "block_number": 26187572,
+    "pairs": 19,
+    "reviewed_candidates": 3,
+    "age_blocks": 0,
+    "accepted": true,
+    "source": "https://ethereum-rpc.publicnode.com"
+  },
+  "goal_unchanged_bytes": true,
+  "older_records_unchanged": true,
+  "record_number": 30,
+  "record_hash_matches_wall": true,
+  "wall_files_identical": true,
+  "named_outputs_untracked": true,
+  "all_new_source_files_below_100000_bytes": true,
+  "png": {
+    "format": "PNG",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 3954306,
+    "valid_structure": true
+  },
+  "jpeg": {
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 56455,
+    "valid_structure": true
+  },
+  "unchanged_outside_new_mark": true,
+  "unmet_visual_requirements": []
+}
