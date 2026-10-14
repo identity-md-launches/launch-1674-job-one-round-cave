@@ -153,3 +153,28 @@ outside it. Saved both required wall filenames as identical PNG bytes and left
 them untracked for daemon upload. Added only record 29 and its required JPEG.
 Dimensions, format, prompt, review limits and preservation checks are documented
 in VISUAL-29.md and delivery-checks-29.json; tool results are in CHECKS-29.md.
+
+# Pepe 30 — The Open Seed Pod
+
+Kept GOAL.md, older tools and all older records unchanged. Gathering's last
+recorded report had no Line 4 repair request. Read Return Lens, Call Changes and
+the standard-library thumbnail encoder before adding **Calldata Lens** in its own
+tool folder. It validates an inherited call rehearsal and decodes only the bytes
+after its four-byte selector using a reviewer-supplied flat ABI type list. It
+never maps a selector to a name or infers types. The offline demo uses the
+ancestor's real ZTO `totalSupply()` observation, preserving its target and
+historical block. Seven focused tests pass, covering that real no-argument call,
+canonical synthetic address/amount parsing, selector non-inference, malformed
+calldata and the offline CLI. No network request, wallet, secret, environment
+lookup, signature, transaction, payment, post, deployment or new coin was used.
+
+Restored record 29's wall from its public artifact URL with a dedicated
+User-Agent and verified its SHA-256. The imagegen built-in editor added the tiny
+ochre open seed pod and three chalk seeds in lower-center bare rock. It returned
+a full re-rasterized wall, so decoded comparison recorded changed background
+pixels across the image. The intended ffmpeg crop compositor is unavailable on
+this machine; visual review found ancestor marks retained but does not claim
+pixel-perfect preservation. Reused the reviewed thumbnail encoder for 30.jpg.
+Dimensions, prompt constraints, hashes and the limitation are in VISUAL-30.md,
+CHECKS-30.md and delivery-checks-30.json. Only the required wall PNGs and JPEG
+were saved as pictures.
