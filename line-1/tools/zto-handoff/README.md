@@ -41,6 +41,20 @@ The file path must be inside this workspace, is capped at 100 KB, and no
 network call is made. An accepted result is integrity checking only: it is not
 an execution approval or a fresh quote.
 
+When the receiver also has the snapshot, report, and review policy, use the
+stronger evidence check. It reruns the review, binds all three canonical source
+digests to those supplied files, and rebuilds the exact handoff before
+accepting it:
+
+```sh
+python3 -B line-1/tools/zto-handoff/zto_handoff.py --demo --verify-evidence line-1/tools/zto-handoff/demo-handoff.json
+```
+
+For caller evidence, replace `--demo` with `--policy POLICY --snapshot
+SNAPSHOT --report REPORT`. This remains offline. It validates supplied
+historical evidence only; it neither obtains a current quote nor prepares a
+transaction.
+
 ## What happened when tried
 
 The demonstration succeeded offline and tests covered the accepted historical
@@ -51,8 +65,9 @@ handoff digest/unit/transaction tampering, and the no-network CLI path:
 python3 -B -m unittest discover -s line-1/tools/zto-handoff -p 'test_*.py' -v
 ```
 
-When tried this round, all six focused tests passed and the committed
-`demo-handoff.json` verified as `accepted` offline.
+When tried this round, all eight focused tests passed and the committed
+`demo-handoff.json` passed both the self-contained and evidence-backed
+verifiers offline.
 
 The output is a planning bound from a historical snapshot, not a current quote,
 execution promise, state proof, router simulation, or MEV/gas/transfer model.

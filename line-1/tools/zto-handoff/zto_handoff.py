@@ -126,23 +126,73 @@ def verify_handoff(value):
             'limitations': ['This checks the handoff file only; it does not independently re-review its evidence or prepare settlement.']}
 
 
+def verify_evidence(value, observation, report, policy):
+    """Rebuild a handoff from supplied evidence and require byte-for-byte meaning.
+
+    Unlike :func:`verify_handoff`, this is useful when the receiver has the
+    three source documents as well as the transferred handoff.  It reruns the
+    review and derives the only acceptable handoff for the claimed amount.
+    The comparison is type-sensitive and includes every limitation, so a file
+    that merely has a valid self-digest cannot be substituted for these inputs.
+    """
+    require = review.sizes.path.z.require
+    verify_handoff(value)
+    result = review.review(observation, report, policy)
+    require(result['status'] == 'accepted', 'evidence review did not accept a usable bound')
+    expected_digests = {
+        'snapshot_sha256': result['snapshot_sha256'],
+        'policy_sha256': result['policy_sha256'],
+        'report_sha256': result['report_sha256'],
+    }
+    require(value['source_digests'] == expected_digests,
+            'handoff source digests do not match supplied evidence')
+    expected = handoff(observation, report, policy, value['requested_input'], value['mode'])
+    require(value == expected, 'handoff does not exactly match supplied reviewed evidence')
+    return {'schema': 'zto-bound-handoff-evidence-verification-v1',
+            'status': 'accepted', 'handoff_sha256': value['handoff_sha256'],
+            'pool_id': value['pool_id'], 'input_token': value['input_token'],
+            'output_token': value['output_token'], 'limitations': [
+                'This rechecks supplied historical files; it is not a live quote, execution simulation, or settlement approval.']}
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
-    mode = parser.add_mutually_exclusive_group(required=True)
+    mode = parser.add_mutually_exclusive_group()
     mode.add_argument('--demo', action='store_true',
                       help='offline handoff from bundled historical real-pool evidence')
     mode.add_argument('--policy', help='review policy JSON inside this workspace')
     mode.add_argument('--verify', help='verify a workspace handoff JSON without making a new handoff')
+    parser.add_argument('--verify-evidence', metavar='HANDOFF',
+                        help='re-review workspace evidence and compare it to a workspace handoff')
     parser.add_argument('--snapshot', help='ZTO Path snapshot JSON inside this workspace')
     parser.add_argument('--report', help='ZTO Sizes report JSON inside this workspace')
     parser.add_argument('--amount',
                         help='one exact decimal candidate amount from the reviewed policy')
     args = parser.parse_args(argv)
     try:
-        if args.verify:
-            if args.snapshot or args.report or args.amount:
+        if args.verify and args.verify_evidence:
+            raise ValueError('--verify and --verify-evidence are alternatives')
+        if args.verify or args.verify_evidence:
+            if args.amount:
                 raise ValueError('--verify cannot be combined with handoff inputs')
-            result = verify_handoff(review.read_json(args.verify))
+            handoff_file = args.verify or args.verify_evidence
+            value = review.read_json(handoff_file)
+            if args.verify:
+                if args.snapshot or args.report or args.policy:
+                    raise ValueError('--verify cannot be combined with evidence inputs')
+                result = verify_handoff(value)
+            else:
+                if args.demo:
+                    if args.snapshot or args.report or args.policy:
+                        raise ValueError('--demo cannot be combined with custom evidence')
+                    policy_file = review.HERE / 'demo-policy.json'
+                    snapshot_file, report_file = review.DEFAULT_SNAPSHOT, review.DEFAULT_REPORT
+                else:
+                    if not args.policy or not args.snapshot or not args.report:
+                        raise ValueError('--verify-evidence requires --demo or --policy, --snapshot, and --report')
+                    policy_file, snapshot_file, report_file = args.policy, args.snapshot, args.report
+                result = verify_evidence(value, review.read_json(snapshot_file),
+                                         review.read_json(report_file), review.read_json(policy_file))
         elif args.demo:
             if not args.amount:
                 raise ValueError('--amount is required when making a handoff')
@@ -151,14 +201,16 @@ def main(argv=None):
             policy_file = review.HERE / 'demo-policy.json'
             snapshot_file, report_file = review.DEFAULT_SNAPSHOT, review.DEFAULT_REPORT
             selected_mode = 'historical_demo'
-        else:
+        elif args.policy:
             if not args.amount:
                 raise ValueError('--amount is required when making a handoff')
             if not args.snapshot or not args.report:
                 raise ValueError('--policy requires --snapshot and --report')
             policy_file, snapshot_file, report_file = args.policy, args.snapshot, args.report
             selected_mode = 'caller_policy'
-        if not args.verify:
+        else:
+            raise ValueError('choose --demo, --policy, --verify, or --verify-evidence')
+        if not args.verify and not args.verify_evidence:
             result = handoff(review.read_json(snapshot_file), review.read_json(report_file),
                              review.read_json(policy_file), args.amount, selected_mode)
         print(json.dumps(result, indent=2, allow_nan=False))

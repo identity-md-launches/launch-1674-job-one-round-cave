@@ -70,6 +70,27 @@ class HandoffTests(unittest.TestCase):
         self.assertEqual(read_json.call_count, 1)
         self.assertEqual(json.loads(output.getvalue())['status'], 'accepted')
 
+    def test_evidence_verifier_rebuilds_the_handoff(self):
+        result = h.handoff(self.observation, self.report, self.policy, '100000000', 'historical_demo')
+        accepted = h.verify_evidence(result, self.observation, self.report, self.policy)
+        self.assertEqual(accepted['status'], 'accepted')
+        changed = copy.deepcopy(result)
+        changed['limitations'][0] = 'A different claim.'
+        changed['handoff_sha256'] = h.review.digest(
+            {key: value for key, value in changed.items() if key != 'handoff_sha256'})
+        with self.assertRaisesRegex(ValueError, 'exactly match'):
+            h.verify_evidence(changed, self.observation, self.report, self.policy)
+
+    def test_evidence_cli_is_offline_and_requires_complete_inputs(self):
+        with patch.object(h.review.sizes.path.z, 'RPC', side_effect=AssertionError('network forbidden')):
+            with contextlib.redirect_stdout(io.StringIO()) as output:
+                self.assertEqual(h.main(['--demo', '--verify-evidence',
+                                         str(h.HERE / 'demo-handoff.json')]), 0)
+        self.assertEqual(json.loads(output.getvalue())['status'], 'accepted')
+        with contextlib.redirect_stderr(io.StringIO()) as error:
+            self.assertEqual(h.main(['--verify-evidence', str(h.HERE / 'demo-handoff.json')]), 1)
+        self.assertIn('error', json.loads(error.getvalue()))
+
 
 if __name__ == '__main__':
     unittest.main()
